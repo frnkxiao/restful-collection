@@ -1,0 +1,6 @@
+<div class="row" ng-repeat="row in xrange track by $index">
+  <div class="cell" ng-repeat="cell in getyrange($index + 1)  track by $index">
+    {{$index + 1}} * {{$parent.$index + 1}} = {{ ($parent.$index + 1) * ($index + 1)  }}
+  </div>
+  <br>
+</div>

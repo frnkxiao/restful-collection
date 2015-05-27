@@ -1,0 +1,24 @@
+<div layout="row">
+    <md-card flex offset="33">
+       <md-button ng-click="updateUser()" class="md-raised">Refresh</md-button>
+       <md-card-content>
+           <img ng-src="{{user.picture.medium}}" class="img-circle center-block" alt="">
+           <div class="md-list-item-text">
+                <h3 class="text-center">{{user.name.first + " " + user.name.last}}</h3>
+                <h5>Title: <small>{{user.name.title}}</small></h5>
+                <h5>Nationality: <small>{{user.nationality}}</small></h5>
+                <h5>Gender: <small>{{user.gender}}</small></h5>
+                <h5>Email: <small>{{user.email}}</small></h5>
+                <h5>Phone #: <small>{{user.phone}}</small></h5>
+                <h5>Cell #: <small>{{user.cell}}</small></h5>
+                <h5>SSN: <small>{{user.SSN || user.DNI}}</small></h5>
+                <h5>DOB: <small>{{user.dob | date : 'EEE, d MMM yyyy'}}</small></h5>
+                <h5>Username: <small>{{user.username}}</small></h5>
+                <h5>Password: <small>{{user.password}}</small></h5>
+                <h5>Date Registered: <small>{{user.registered | date : 'EEE, d MMM yyyy'}}</small></h5>
+           </div>
+       </md-card-content>
+
+    </md-card>
+    <div flex></div>
+</div>
